@@ -13,7 +13,12 @@ Welcome to our dynamic waste management platform! With engaging gamification and
 
 ## Technologies Used
 
-
+- <div style="background-color:#E34C26; color:#fff; padding: 5px;">HTML</div>
+- **CSS**
+- **JavaScript**
+- **React.Js**
+- **Vite.Js**
+- **Tailwind CSS**
 
 ## Getting Started
 
