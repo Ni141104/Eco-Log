@@ -1,0 +1,18 @@
+figcaption{
+    position: absolute;
+    opacity:0;
+    bottom: 0px;
+    height: 25%;
+    width: 97%;
+    left: 9px;
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+    /* padding: 20px; */
+    background: linear-gradient(0deg,rgba(0, 0, 0),rgba(255, 255, 255, 0));
+}
+.card1:hover figcaption{
+    opacity: 1;
+    transform: scale(1.03);
+    transition: 1s;
+}

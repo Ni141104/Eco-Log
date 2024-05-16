@@ -1,0 +1,104 @@
+
+    *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .main{
+            height:88vh;
+            overflow-x: hidden;
+            overflow-y: auto;
+            perspective: 10px;
+            width: 100vw;
+        }
+        .demo{
+            display: flex;
+           flex-wrap: wrap;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            transform-style: preserve-3d;
+            /* Will store all 3D effects */
+            z-index:-1;
+            /* It represents layer 1 */
+        }
+        .background,.foreground{
+            position: absolute;
+            /* height: 100%;
+            width: 100%; */
+            z-index: -1;
+            /* object-fit: cover;    */
+            /* It will fit image in container fully*/
+        }
+        .background{
+            transform:translateZ(-40px) scale(5);
+        }
+        .foreground{
+            top: 300px;
+            transform: translateZ(-20px) scale(3.8);
+
+        }
+        .description{
+            position: absolute;
+            top: 590px;
+            font-size: 400%;
+            color: #dcd6d6;
+            text-shadow: 2px 2px 3px black;
+        }
+        .section{
+            position: relative;
+            background-color:#e0dcdcaa;
+            color: rgb(132, 125, 125);
+            padding: 5rem 0;
+            width: 100%;
+            right: 20px;
+
+        }
+
+       .bg{
+          height: 450px;
+          width:100%;
+          position:relative;
+          background-size: 100%;
+          background-attachment: fixed;
+          background-position: center;
+          
+       }
+       .secHead{
+        position:relative;
+        /* left: 9rem; */
+        /* margin-bottom: 2rem; */
+        bottom: -30px;
+        font-size: 2rem;
+        font-family:cursive;
+        color:rgba(0, 0, 0, 0.697)
+       }
+        .text{
+            margin:1rem 0;
+            padding:0 10rem;
+            font-size: 1.5rem;
+            
+        }
+        .bg1{
+        background-image: url(marketplacegif.gif);}
+    .bg2{
+
+    background-image: url(gifforever.gif);
+    }
+        .bg3{
+            background-image: url(event.png);
+        }
+        .desc{
+            position: relative;
+        color: black;
+
+        background-color: rgba(255, 255, 255, 0.595) ;
+        height: 90px;
+        width: 400px;
+        padding: 30px 10px;
+        top:200px;
+        /* left:43%; */
+        font-size: 150%;
+        border-radius: 100px;
+        }

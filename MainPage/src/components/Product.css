@@ -1,0 +1,76 @@
+.product{
+    display: flex;
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 360px;
+    width: 600px;
+    margin:10rem auto;
+
+
+}
+.section{
+    margin:0 20px;
+}
+.head{
+    
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* word-spacing: 10px; */
+    font-size: small;
+}
+.type{
+  
+    position: relative;
+    /* bottom: 45px; */
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight:1000;
+    font-size: x-large;
+    width: 200px;
+}
+.content{
+    /* transform: translateY(-80px); */
+    width: 200px;
+    color: gray;
+}
+.original::before{
+content: "\20B9";
+color: rgb(232, 75, 92);
+font-size: xx-large;
+}
+.original{
+color: rgb(226, 75, 92);
+font-size: xx-large;
+}
+
+.cancel::before{
+content: "\20B9";
+color:grey;
+text-decoration-line: line-through
+}
+.cancel{
+color: grey;
+text-decoration-line: line-through;
+}
+.rate{
+    position: relative;
+
+/* transform: translateY(-110px); */
+}
+.cart{
+width:200px;
+height:30px;
+background-color: rgb(226, 75, 92);
+padding-left: 30%;
+padding-top: 5px;
+transform: translateY(-130px);
+border-radius: 10px;
+}
+.add{
+color: white;
+position: relative;
+left: 10px;
+}
+.shop{
+position: relative;
+top: 4px;
+border-radius: 10px;
+}

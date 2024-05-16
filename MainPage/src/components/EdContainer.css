@@ -1,0 +1,13 @@
+.container {
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    /* align-items: center; */
+    /* width: 100%; */
+    /* overflow-x: hidden; */
+    /* justify-content: center; */
+    justify-content: space-around;
+    width: 1200px;
+    position: relative;
+    box-sizing: border-box;
+}

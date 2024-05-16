@@ -1,0 +1,43 @@
+.card2{
+    width: 300px;
+    /* background-color: rgb(12, 12, 32); */
+    margin-left: 40px;
+    margin-right: 40px;
+    color: black;
+    height: 300px;
+    border-radius: 2%;
+    /* filter: drop-shadow(0px 0px 5px rgb(55, 48, 48));   */
+}
+.card2:hover{
+    filter: drop-shadow(0px 0px 15px rgb(55, 48, 48));  
+    /* scale: 100px; */
+}
+.image {
+    /* position: relative;
+    width: 100%;
+    border-radius: 5%; */
+/* object-fit: contain; */
+}
+
+.iconbtn2{
+    position: absolute;
+    margin-left: 250px;
+    border-radius: 50%;
+    margin-top: -17px;
+}
+
+.title {
+    color: white;
+    font-weight: 600;
+    padding-left: 10px;
+    font-size: large;
+}
+
+.details {
+    color: rgba(255, 255, 255, 0.644);
+    margin-top: 5px;
+
+    padding-left: 7px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+

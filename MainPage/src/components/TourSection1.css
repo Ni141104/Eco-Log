@@ -1,0 +1,10 @@
+.Card-outer {
+    display: flex;
+    /* margin-left: auto; */
+    margin: 0 auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* position: fixed; */
+}
