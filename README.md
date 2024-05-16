@@ -13,11 +13,14 @@ Welcome to our dynamic waste management platform! With engaging gamification and
 
 ## Technologies Used
 
-- **Frontend:** HTML, CSS, JavaScript, React.js
-- **Backend:** Node.js, Express.js, MongoDB
-- **Analytics:** Real-time data analytics powered by [AnalyticsToolName]
-- **Gamification:** [GamificationToolName]
-- **Education Resources:** Links to reputable online resources for waste management education
+- <div style="background-color:#2965F1; color:#fff; padding: 5px;">HTML</div>
+- <div style="background-color:#2965F1; color:#fff; padding: 5px;">CSS</div>
+- <div style="background-color:#F0DB4F; color:#000; padding: 5px;">JavaScript</div>
+- <div style="background-color:#61DAFB; color:#000; padding: 5px;">React.js</div>
+- <div style="background-color:#38B2AC; color:#fff; padding: 5px;">Tailwind CSS</div>
+- <div style="background-color:#646C72; color:#fff; padding: 5px;">Vite.js</div>
+
+
 
 ## Getting Started
 
