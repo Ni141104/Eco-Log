@@ -33,22 +33,23 @@
         }
         .background{
             transform:translateZ(-40px) scale(5);
+
         }
         .foreground{
-            top: 300px;
+            top: 100px;
             transform: translateZ(-20px) scale(3.8);
 
         }
         .description{
             position: absolute;
             top: 590px;
-            font-size: 400%;
-            color: #dcd6d6;
+            font-size: 590%;
+            color: #24481a;
             text-shadow: 2px 2px 3px black;
         }
         .section{
             position: relative;
-            background-color:#e0dcdcaa;
+            background-color:#e0dcdce8;
             color: rgb(132, 125, 125);
             padding: 5rem 0;
             width: 100%;
@@ -93,7 +94,7 @@
             position: relative;
         color: black;
 
-        background-color: rgba(255, 255, 255, 0.595) ;
+        background-color: rgba(255, 255, 255, 0.537) ;
         height: 90px;
         width: 400px;
         padding: 30px 10px;

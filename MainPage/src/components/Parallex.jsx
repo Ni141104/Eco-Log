@@ -11,7 +11,7 @@ function Parallex(){
         <div className="demo">
             {/* <img src={background} alt="Error"  width="100%" height="100%" className="background"/> */}
             <img src={background} alt="Error" height="100%" width="100%" className="foreground"/>
-            <h1 className="description">Waste Management</h1>
+            <h1 className="description">ECO-LOG</h1>
         </div>
 
         <div className="first second third fourth section">
@@ -26,7 +26,7 @@ function Parallex(){
              
                 <br></br>
                 Our smart technology ensures overflowing waste is promptly addressed with automatic notifications to nearby organizations
-                Smart bins streamline waste management with real-time monitoring and automated notifications.
+                Smart bins streamline waste management with real-time monitoring and automated notifications. Revolutionize waste management with our cutting-edge technology, ensuring timely responses to overflowing bins and seamless coordination with nearby organizations.
                 </p>
             </div>
 

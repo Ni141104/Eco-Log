@@ -32,7 +32,7 @@ function Education() {
   //   fetchData();//Because the data will require and we doesn't need any on click function to call it
   // }, []);
   return (
-    <div className=' justify-items-center bg-[#fff5c6]'>
+    <div className=' justify-items-center bg-[#fff5c6] min-h-screen'>
       <div className='overflow-x-hidden'>
         <Navbar />
       </div>

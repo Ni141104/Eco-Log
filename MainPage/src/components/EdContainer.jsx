@@ -24,7 +24,7 @@ function Container(props) {
         }
     }
     return (
-        <div className='w-[1480px] flex flex-wrap gap-y-8 justify-center px-40 py-10 '>
+        <div className='w-[1480px]  flex flex-wrap gap-y-8 justify-center px-40 py-10 '>
             {
                 getCourses().map((chapters) => {
                     return (<Card chapters={chapters} key={chapters.id} likedCourses={likedCourses} setLikedCourse={setLikedCourse}></Card>);
