@@ -1,6 +1,6 @@
-# Waste Management Web Application
+# Eco-Log
 
-Welcome to our waste management solution web application! Our platform offers a comprehensive marketplace where individuals and organizations can contribute to waste management efforts. Users have the opportunity to sell their waste products, while companies seeking recyclable materials can place requests for specific items. Additionally, companies can showcase their products to a targeted audience, enhancing their marketing strategies.
+Welcome to our dynamic waste management platform! With engaging gamification and real-time analytics, users can actively participate while staying informed about their impact. Our marketplace facilitates the buying and selling of waste products, promoting a circular economy. Dive into curated courses on waste management techniques, and stay informed about local initiatives through our campaign page. Join us in making a difference today!
 
 ## Key Features
 
