@@ -13,12 +13,10 @@ Welcome to our dynamic waste management platform! With engaging gamification and
 
 ## Technologies Used
 
-- <div style="background-color:#E34C26; color:#fff; padding: 5px;">HTML</div>
-- **CSS**
-- **JavaScript**
-- **React.Js**
-- **Vite.Js**
-- **Tailwind CSS**
+- <img src="https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=white" alt="React">
+- <img src="https://img.shields.io/badge/-Vite-646CFF?style=flat-square&logo=vite&logoColor=white" alt="Vite">
+- <img src="https://img.shields.io/badge/-CSS-1572B6?style=flat-square&logo=css3&logoColor=white" alt="CSS">
+- <img alt="TailwindCSS" src="https://img.shields.io/badge/TailwindCSS-8A2BE2">
 
 ## Getting Started
 
