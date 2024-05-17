@@ -16,7 +16,7 @@ Welcome to our dynamic waste management platform! With engaging gamification and
 - <img src="https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=white" alt="React">
 - <img src="https://img.shields.io/badge/-Vite-646CFF?style=flat-square&logo=vite&logoColor=white" alt="Vite">
 - <img src="https://img.shields.io/badge/-CSS-1572B6?style=flat-square&logo=css3&logoColor=white" alt="CSS">
-- <img alt="TailwindCSS" src="https://img.shields.io/badge/TailwindCSS-8A2BE2">
+- <img alt="TailwindCSS" src="https://img.shields.io/badge/-TailwindCSS-8A2BE2?style=flat-square&logo=tailwindcss&logoColor=white">
 
 ## Getting Started
 
