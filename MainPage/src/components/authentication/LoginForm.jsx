@@ -1,3 +1,4 @@
+import axios from "axios";
 import { useState } from "react";
 import toast from "react-hot-toast";
 import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai"
@@ -18,9 +19,20 @@ function LoginForm({ setIsLoggedIn }) {
         }))
     }
 
-    function submitHandler(event) {
+    async function submitHandler(event) {
+        const email=formData.email;
+        const password=formData.password
         event.preventDefault();
         setIsLoggedIn(true);
+        try {
+            const response=await axios.post('http://localhost:3000/user/signin',{email,password})
+            const {token}=response.data;
+            console.log(token);
+            localStorage.setItem('jwtToken',token);
+        } catch (error) {
+            console.log(error);
+            
+        }
         toast.success("Login in Successfully")
         navigate("/Dashboard")
     }
@@ -47,7 +59,6 @@ function LoginForm({ setIsLoggedIn }) {
                 <button className="bg-yellow-400 py-2 rounded-xl text-[#333533] border border-black font-medium hover:border-[#edefff] ">
                     Sign In
                 </button>
-
             </form>
         </div>
     )

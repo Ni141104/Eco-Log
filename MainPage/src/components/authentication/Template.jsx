@@ -1,7 +1,7 @@
 import SignUpForm from "./SignUpForm";
 import LoginForm from "./LoginForm";
 import {FcGoogle} from 'react-icons/fc'
-import pattern from '../assets/pattern.jpg';
+import pattern from '../../assets/pattern.jpg';
 import './Template.css'
 function Template({title,desc1,desc2,image,formtype,setIsLoggedIn}){
     return(

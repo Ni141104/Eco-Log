@@ -10,8 +10,8 @@ function Quiz() {
 
   return (
     <>
-    <ToastContainer/>
-    <Game></Game>
+      <ToastContainer />
+      <Game></Game>
     </>
   )
 }

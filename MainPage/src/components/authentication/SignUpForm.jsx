@@ -2,14 +2,17 @@ import { useState } from "react";
 import toast from "react-hot-toast";
 import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
 import { useNavigate } from 'react-router-dom';
+import axios from 'axios'
 function SignUpForm({ setIsLoggedIn }) {
     const navigate = useNavigate()
     const [FormData, setFormData] = useState({
         firstName: "",
         lastName: "",
         email: "",
+        phone:"",
         password: "",
-        confirmPassword: ""
+        confirmPassword: "",
+        role:""
     })
     const [showConfirmPassword, setShowConfirmPassword] = useState(false)
     const [showPassword, setShowPassword] = useState(false)
@@ -20,13 +23,28 @@ function SignUpForm({ setIsLoggedIn }) {
             [event.target.name]: event.target.value
         }))
     }
+    const username=FormData.firstName;
+    const password=FormData.password;
+    const email=FormData.email;
+    const role=FormData.role;
 
-    function submitHandler(event) {
+    async function submitHandler(event) {
         event.preventDefault();
-        if (FormData.password != FormData.confirmPassword) {
-            toast.error("Confirm Password do not match");
+        console.log(username, password, email , role);
+        try {
+            const response = await axios.post('http://localhost:3000/user/signup', {username, password,email,role}, {
+              headers: {
+                'Content-Type': 'application/json'
+              }
+            });
+            console.log('Response:', response.data);
+          } catch (error) {
+            console.error('Error in signup:', error);
+            toast.error("error in signup");
             return;
         }
+
+
         setIsLoggedIn(true);
         toast.success("Account Created");
         const accountData = {
@@ -52,18 +70,31 @@ function SignUpForm({ setIsLoggedIn }) {
                 <div className="flex gap-x-3">
                     <label>
                         <p className="text-[0.875rem] text-[#edefff] mb-1 leading-[1.375rem]">First Name<sup className="text-[#ff2a2a]">*</sup></p>
-                        <input required type="text" name="firstName" onChange={changeHandler} placeholder="Enter First Name" value={FormData.firstName} className="bg-[#020617] rounded-[0.5rem] border border-[#26272a] p-[8px] hover:border-[#b9bac2] transition duration-100 w-full"/>
+                        <input required type="text" name="firstName" onChange={changeHandler} placeholder="Enter First Name" value={FormData.firstName} className="bg-[#020617] rounded-[0.5rem] border border-[#26272a] text-[#edefff]  p-[8px] hover:border-[#b9bac2] transition duration-100 w-full"/>
                     </label>
                     <label>
                         <p className="text-[0.875rem] text-[#edefff] mb-1 leading-[1.375rem]">Last Name<sup className="text-[#ff2a2a]">*</sup></p>
-                        <input required type="text" name="lastName" onChange={changeHandler} placeholder="Enter last Name" value={FormData.lastName} className="bg-[#020617] rounded-[0.5rem] border border-[#26272a] p-[8px] hover:border-[#b9bac2] transition duration-100 w-full"/>
+                        <input required type="text" name="lastName" onChange={changeHandler} placeholder="Enter last Name" value={FormData.lastName} className="bg-[#020617] rounded-[0.5rem] border border-[#26272a] text-[#edefff]  p-[8px] hover:border-[#b9bac2] transition duration-100 w-full"/>
                     </label>
 
                 </div>
 
                 <label>
+                    <p className="text-[0.875rem] text-[#edefff] mb-1 leading-[1.375rem]">Mobile Number<sup className="text-[#ff2a2a]">*</sup></p>
+                    <input required type="tel" pattern="[0-9]*" name="phone" onChange={changeHandler} placeholder="Enter your mobile number here" value={FormData.phone} className="bg-[#020617] rounded-[0.5rem] border border-[#26272a] text-[#edefff] p-[8px] font-normal hover:border-[#b9bac2] transition duration-100 w-full"/>
+                </label>
+                <label>
                     <p className="text-[0.875rem] text-[#edefff] mb-1 leading-[1.375rem]">Email Address<sup className="text-[#ff2a2a]">*</sup></p>
-                    <input required type="email" name="email" onChange={changeHandler} placeholder="Enter Email Address" value={FormData.email} className="bg-[#020617] rounded-[0.5rem] border border-[#26272a] p-[8px] hover:border-[#b9bac2] transition duration-100 w-full"/>
+                    <input required type="email" name="email" onChange={changeHandler} placeholder="Enter Email Address" value={FormData.email} className="bg-[#020617] rounded-[0.5rem] border border-[#26272a] p-[8px] text-[#edefff]  hover:border-[#b9bac2] transition duration-100 w-full"/>
+                </label>
+                <label>
+                    <p className="text-[0.875rem] text-[#edefff] mb-1 leading-[1.375rem]">Role<sup className="text-[#ff2a2a]">*</sup></p>
+                    <select required name="role" onChange={changeHandler}  value={FormData.role} className="bg-[#020617]  text-[#949499] rounded-[0.5rem] border border-[#26272a] p-[8px] hover:border-[#b9bac2] transition duration-100 w-full">
+                        <option className=" text-[#edefff]" value="select" >Select your role</option>
+                        <option className=" text-[#edefff]" value="company" >Company</option>
+                        <option className=" text-[#edefff]" value="user">User</option>
+                        <option className=" text-[#edefff]" value="vendors">Vendors</option>
+                    </select>
                 </label>
 
                 <div className="flex gap-x-2">

@@ -1,4 +1,4 @@
-import sorting from '../assets/wastemanagement.jpg'
+
 export const filterData = [
     {
         id: "1",

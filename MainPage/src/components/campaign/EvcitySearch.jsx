@@ -22,13 +22,13 @@ const citySearch = ({ data, cityName }) => {
                 placeholder="Search by city..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
-            className='text-black rounded-lg font-serif px-3' />
+                className='text-black rounded-lg font-serif px-3' />
             <div className='flex flex-wrap gap-8 justify-center mt-5'>
 
-            {filteredCampaigns.map(campaign => {
-                return <Card key={campaign.id} {...campaign} />
+                {filteredCampaigns.map(campaign => {
+                    return <Card key={campaign.id} {...campaign} />
 
-            })}
+                })}
             </div>
 
         </div>

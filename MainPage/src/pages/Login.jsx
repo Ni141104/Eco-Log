@@ -1,4 +1,4 @@
-import Template from "../components/Template";
+import Template from "../components/authentication/Template";
 import loginImg from "../assets/teacherteaching.png"
 function Login({setIsLoggedIn}){
     return(

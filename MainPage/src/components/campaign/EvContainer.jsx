@@ -1,4 +1,4 @@
-import Card from "./EvCard";
+import Card from "./campaign/EvCard";
 import Loading from "./EvLoading";
 function Container({ campaign, cityName, setmyLocation }) {
     console.log(cityName);

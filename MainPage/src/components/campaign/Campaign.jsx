@@ -2,17 +2,14 @@ import { useState } from 'react'
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 // import './Campaign.css'
-import TajMahal from '../assets/riverCleaning.jpg';
-import HawaMahal from '../assets/ngo.jpeg';
-import Kedarnath from '../assets/foodDrive.png';
-import Mumbai from '../assets/cleanupdrive.jpg';
-import Ahmedabad from '../assets/EnvironmentDay.png';
-import Pune from '../assets/volunteers.png';
-import Banglore from '../assets/treePlantation.jpeg';
-import Container from './EvContainer';
-import NavBar from './EvNavBar';
+import TajMahal from '../../assets/riverCleaning.jpg';
+import HawaMahal from '../../assets/ngo.jpeg';
+import Kedarnath from '../../assets/foodDrive.png';
+import Mumbai from '../../assets/cleanupdrive.jpg';
+import Ahmedabad from '../../assets/EnvironmentDay.png';
+import Banglore from '../../assets/treePlantation.jpeg';
 import { useEffect } from 'react';
-import { AiOutlineSearch } from 'react-icons/ai';
+// import { AiOutlineSearch } from 'react-icons/ai';
 import CitySearch from './EvcitySearch';
 function Campaign() {
   const data = [
@@ -170,22 +167,22 @@ function Campaign() {
 
   return (
     <>
-    <div className='bg-[#dad7cd] py-4 min-h-screen'>
+      <div className='bg-[#dad7cd] py-4 min-h-screen'>
 
-      {/* <p className='text-[#111d13]'>Campaign</p> */}
-      <div>
-        {
-          <CitySearch data={data} cityName={cityName}></CitySearch>
-        }
-        {/* <CitySearch data={data} cityName={cityName}></CitySearch> */}
-        {/* <button onClick={() => getLocation()}>Allow</button> */}
-        {/* <p>{cityName}</p> */}
-        {/* <p>{search}</p> */}
-        {/* <input type="text" placeholder="Search City.." onChange={changeHandler}></input> */}
-        {/* <button onClick={submitCity}><AiOutlineSearch /></button> */}
-        {/* <NavBar cityName={cityName} setcityName={setcityName} submitHandler={submitHandler} /> */}
-        {/* <Container campaign={campaign} cityName={cityName} /> */}
-    </div>
+        {/* <p className='text-[#111d13]'>Campaign</p> */}
+        <div>
+          {
+            <CitySearch data={data} cityName={cityName}></CitySearch>
+          }
+          {/* <CitySearch data={data} cityName={cityName}></CitySearch> */}
+          {/* <button onClick={() => getLocation()}>Allow</button> */}
+          {/* <p>{cityName}</p> */}
+          {/* <p>{search}</p> */}
+          {/* <input type="text" placeholder="Search City.." onChange={changeHandler}></input> */}
+          {/* <button onClick={submitCity}><AiOutlineSearch /></button> */}
+          {/* <NavBar cityName={cityName} setcityName={setcityName} submitHandler={submitHandler} /> */}
+          {/* <Container campaign={campaign} cityName={cityName} /> */}
+        </div>
       </div>
     </>
   )

@@ -2,23 +2,23 @@
 // import './Tour.css';
 import TourSection1 from './TourSection1';
 import { useState } from 'react';
-import TajMahal from '../assets/Logo/tata.png';
-import HawaMahal from '../assets/Logo/Nike.jpeg';
-import Kedarnath from '../assets/Logo/Oak.jpeg';
-import Mumbai from '../assets/Logo/apple.jpg';
-import Ahmedabad from '../assets/Logo/Ford.png';
-import Pune from '../assets/Logo/Louis.jpg';
-import Banglore from '../assets/Logo/NFC.jpeg';
-import Slider from './Carousel';
-import Carousel from './Carousel';
-import market from '../assets/MarketPlace.png'
-import demo from '../assets/RecyCledPlantPot.png'
-import demo1 from '../assets/ecommerce.gif'
-import demo2 from '../assets/SellGarbage.png'
-import plant from '../assets/PlantPot.png'
-import bussiness from '../assets/bussiness.gif'
-import NavBar from './NavBar';
-import Product from './Product';
+import TajMahal from '../../assets/Logo/tata.png';
+import HawaMahal from '../../assets/Logo/Nike.jpeg';
+import Kedarnath from '../../assets/Logo/Oak.jpeg';
+import Mumbai from '../../assets/Logo/apple.jpg';
+import Ahmedabad from '../../assets/Logo/Ford.png';
+import Pune from '../../assets/Logo/Louis.jpg';
+import Banglore from '../../assets/Logo/NFC.jpeg';
+import Slider from '../Carousel';
+import Carousel from '../Carousel';
+import market from '../../assets/MarketPlace.png'
+import demo from '../../assets/RecyCledPlantPot.png'
+import demo1 from '../../assets/ecommerce.gif'
+import demo2 from '../../assets/SellGarbage.png'
+import plant from '../../assets/PlantPot.png'
+import bussiness from '../../assets/bussiness.gif'
+import MarketPlace from '../marketplace/MarketPlace';
+
 function Tour() {
   const data = [
     {
@@ -124,6 +124,7 @@ function Tour() {
         <h1 >Companies Demand </h1>
       </div>
       {/* <Product/> */}
+      <MarketPlace/>
       <TourSection1 tour={tours} removeTour={removeTour}></TourSection1>
       <div className="App">
       </div>
